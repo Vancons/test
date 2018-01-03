@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_scan){
+            Log.e("","sssssssssssssssssssssss");
             Intent intentC = new Intent();
             intentC.setClass(mContext, MipcaActivityCapture.class);
             intentC.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
