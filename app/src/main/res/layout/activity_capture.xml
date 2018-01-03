@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <com.van.wfs.scan.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/activity_title" />
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/blue0078c4"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="75.0dip"
+                android:layout_height="70dip"
+                android:layout_alignParentLeft="true"
+                android:text="@string/scan_back"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/scan_title"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/button_function"
+                android:layout_width="wrap_content"
+                android:layout_height="70dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dip"
+                android:minWidth="70dip" />
+        </RelativeLayout>-->
+    </RelativeLayout>
+
+</FrameLayout>
